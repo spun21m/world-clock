@@ -45,6 +45,11 @@ h2 {
   padding-bottom: 8px;
 }
 
+a {
+  color: rgb(239, 218, 180);
+  text-decoration: none;
+}
+
 .date {
   opacity: 0.6;
 }
