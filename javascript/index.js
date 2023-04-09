@@ -26,6 +26,9 @@ setInterval(updateTime, 1000, intervalForCairo);
 
 function updateCityTime(event) {
   let selectedTimeZone = event.target.value;
+  if (selectedTimeZone === "current") {
+    selectedTimeZone = moment.tz.guess();
+  }
   let cityName = selectedTimeZone.replace("_", " ").split("/")[1];
   let selectedCityDate = moment()
     .tz(`${selectedTimeZone}`)
